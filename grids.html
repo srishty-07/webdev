@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in HTML</title>
+    <style>
+        body {
+            background-color: rgb(209, 192, 37);
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 0.5rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        .item {
+            /* background-color: rgb(224, 154, 154); */
+            background: url('1.jpg') no-repeat center center/cover;
+            border: 2px solid rgb(65, 56, 21);
+            padding: 12px 23px;
+            border-radius: 1em;
+            color: cornsilk;
+
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #navbar {
+            grid-area: navbar;
+
+
+        }
+
+        /* navbar css */
+        #navbar {
+            background: black;
+            border-radius: 28px;
+
+        }
+
+        #navbar ul {
+            overflow: auto;
+        }
+
+
+
+        #navbar li a {
+
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+
+        #navbar li a:hover {
+            color: greenyellow
+        }
+
+        /* creating grid within grid */
+        #image1 {
+            grid-area: image1;
+        }
+
+        #image2 {
+            grid-area: image2;
+        }
+
+        #image3 {
+            grid-area: image3;
+        }
+
+        #image4 {
+            grid-area: image4;
+        }
+
+        .imagess {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'image1 image1 image1 image1'
+                'image2 image2 image2 image2'
+                'image3 image3 image3 image3'
+                'image4 image4 image4 image4';
+        }
+
+        .item1 {
+            background-color: rgb(245, 148, 148);
+            /* background: url('1.jpg') no-repeat center center/cover; */
+            border: 2px solid rgb(3, 3, 3);
+            padding: 12px 20px;
+            border-radius: 1em;
+            color: rgb(26, 25, 24);
+
+        }
+/* media queries to make a responsive website */
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: crimson;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 0.5rem;
+                grid-template-areas: 'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            /* neeche vali line ka matlab hai jaise hi uski width itne ke beech main ayegi to usi time aside vala container nahi dikhega */
+            #aside {
+                display: none;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: rgb(33, 211, 235);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 0.5rem;
+                grid-template-areas: 'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: rgb(117, 220, 20);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <ul>
+                <li><a href="*">HOME</a></li>
+                <li><a href="*">ABOUT</a></li>
+                <li><a href="*">SERVICES</a></li>
+                <li><a href="*">ACHEIVMENTS</a></li>
+                <li><a href="*">CONTACT US</a></li>
+
+            </ul>
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, rerum suscipit nesciunt eaque
+            voluptates, veritatis, impedit sint officiis quis deleniti quibusdam? Quos quia numquam assumenda cupiditate
+            cum. Cum saepe libero esse perferendis delectus aliquid iste iure tempore, cupiditate eaque voluptas
+            inventore tempora tenetur, in voluptatem? Quibusdam explicabo dolore voluptas eum culpa quae, non omnis sit
+            autem totam provident ratione corrupti aliquam laborum velit tempora vero, nemo facilis officiis quaerat
+            numquam qui repellat quidem. Omnis distinctio at minus nihil magnam ea architecto alias ipsa saepe in
+            quibusdam accusamus debitis accusantium officiis, vitae enim molestiae quia qui consequatur fugiat aliquid
+            obcaecati, adipisci recusandae nemo? Culpa dolorum facere optio placeat sunt dolores fugit aliquam quidem
+            veniam, maiores libero quam explicabo hic perferendis, harum deserunt deleniti illum eos. Atque perferendis,
+            odio placeat vitae, dolorem voluptatum facere id sapiente accusamus deserunt natus culpa blanditiis.
+            Distinctio at necessitatibus praesentium veritatis ipsa autem cum, in unde ab excepturi sint iure est sunt
+            quas nobis dolores doloremque perferendis pariatur eligendi voluptatibus. Nobis totam quidem, sed officiis
+            tempore optio similique culpa ipsam vero repudiandae cupiditate nihil obcaecati, porro perspiciatis nemo,
+            maxime unde. Voluptas ab sequi laudantium perspiciatis ad vel quis sed magni facere unde maiores ducimus
+            numquam molestias eaque iste, quisquam sit inventore dolore tempore quam enim sint! Consectetur adipisci
+            laboriosam ipsa nesciunt magnam facere dolorem! Deserunt dolor pariatur voluptatem at harum impedit maiores.
+            Porro laudantium culpa iusto veritatis earum voluptates enim adipisci tempore incidunt repellendus
+            doloremque rem sapiente assumenda, impedit animi? Incidunt, optio tenetur? Molestiae neque magni laudantium
+            dolores delectus dolorem quibusdam, distinctio adipisci corporis? Odit molestias, nulla ipsum amet accusamus
+            laboriosam suscipit expedita? Nesciunt inventore expedita a nam doloremque facilis ipsa quos quod nisi fugit
+            doloribus, blanditiis officiis odio! Nesciunt perferendis, quaerat eius obcaecati sed ut minima doloribus
+            nemo laudantium beatae quasi error rerum suscipit. Magnam, porro.
+        </div>
+        <div id="aside" class="item">
+            <div class="imagess">
+                <div id="image1" class="item1">Lorem ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Iste vel laborum perspiciatis quis accusantium molestiae dolorum autem velit illum
+                    quam.</div>
+                <div id="image2" class="item1">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime ipsum praesentium voluptates dolor natus nostrum harum, numquam iste
+                    repudiandae odio!</div>
+                <div id="image3" class="item1">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime ipsum praesentium voluptates dolor natus nostrum harum, numquam iste
+                    repudiandae odio!</div>
+                <div id="image4" class="item1">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime ipsum praesentium voluptates dolor natus nostrum harum, numquam iste
+                    repudiandae odio!</div>
+            </div>
+        </div>
+    </div>
+    <footer class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolor reprehenderit eaque amet saepe dolore
+        sint nisi praesentium, rem cumque odio ut a.
+    </footer>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <h3 id="demo">voter portal</h3>
+</div>
+    <script>
+        let age=prompt("enter your age?","");
+        
+        if(age<18)
+        {
+            // console.log("you are not eligible to vote");
+            let x=document.getElementById("demo");
+            x.style.color = "red";
+            x.textContent="YOU ARE NOT ELIGIBLE TO VOTE";
+        }
+        else
+        {
+            // console.log("you can vote");
+            let x=document.getElementById("demo");
+            x.style.color = "green";
+            x.textContent="YOU ARE  ELIGIBLE TO VOTE!!";
+        }
+
+    </script>
+</body>
+</html> -->
