@@ -1,0 +1,129 @@
+.container1, .container3, .container5{
+    border:1px solid rgb(22, 21, 24);
+    /* it is the border of the container black coloured and solid */
+    width: 75%;    
+    /* 75% is thod akam lesss than 100% which make it little bit in centre as 100% is full form nd 75% would be shrinked version of that   */
+    margin: 0 auto;
+    /* it will make sure that it is centralised */
+    text-align: center;
+    background-color: rgb(214, 203, 231);
+
+}
+
+.flex-box-container1
+{
+    /*An area of a document laid out using flexbox is called a flex container.*/
+    display: flex;/*to create flex container we use display as flex */
+    border: 1px solid rgb(69, 26, 80);
+    padding: 0.5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;   
+    /* for wrapping conditions see the link below */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+}
+
+.flex-box-container1 div{
+    
+    display: flex;
+    padding: 0.5em;
+    /* border:1px solid black; */
+    align-items: center;
+}
+
+
+/* 2nd challenge */
+/* generating a cat  */
+
+
+.container2,.container4
+{
+    padding: 1em;
+    border:1px solid black;
+    width:75%;
+    margin:0 auto;
+    text-align:center;
+    background-color: rgb(203, 219, 54);
+}
+.flex-box-container2, .flex-box-container3,.flex-box-color-change
+,.flexbox-row1,.flexbox-row2,.flexbox-row3
+{
+    
+    display:flex;
+    /* border:1px solid black; */
+    flex-wrap: wrap; 
+    /* will bring picture in next line as soon as container space is over */
+    padding-left: 0.2em;
+    justify-content: space-around;
+    padding-bottom: 2em;
+    padding: 1em;
+    
+    
+}
+
+.flexbox-row1,.flexbox-row2,.flexbox-row3
+{
+    background-image: url("/js images/jackbg.jpg");
+    color: rgb(238, 238, 238);
+    
+}
+
+.flexbox-row1 div
+{
+    border:1px solid black;
+    padding:10px;
+    height:350px;
+    flex:1;
+    /* flex means both div will have equall importance that is it will look same */
+    align-items: center;
+    
+}
+
+table,th,td
+{
+    padding: 5px;
+    border: 1px solid white;
+}
+tr
+{
+    color:white;
+}
+.flexbox-row1 img{
+    width: 25%;
+    /* padding: 25px; */
+
+}
+.flexbox-row2 div{
+    border: 1px solid black;
+    padding: 36px;
+}
+.flex-box-container3
+{
+    display: flex;
+    padding: 14px;
+    border:2px solid rgb(73, 67, 67);
+    align-items: center;
+}
+.flex-box-container3 img:hover
+{
+ box-shadow:0px 10px 50px rgb(66, 8, 40);  
+}
+
+.flex-box-container2 img, .flex-box-container3 img
+{
+    /* border:1px solid deeppink; */
+    
+    margin: 0.3em;
+    /* instead of padding that is space around image and border we are adding margin that will create a space between 2 images and help them maintain distance  */
+    border-radius: 3em;
+    /* box-shadow: 0px 10px 50px rgba(0, 0,0,0.7) ; */
+}
+
+.flexbox-row1 img
+{
+    margin:0.3em;
+    overflow: none;
+    height: 89px;
+    width: auto;
+   
+}
