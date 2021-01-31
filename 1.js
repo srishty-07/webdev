@@ -14,7 +14,7 @@ function ageindays() {
 function reset() {
     document.getElementById('ageindays').remove();
 }
-//2nd challenge
+//2nd 
 function generatecat() {
     //
     //const winSound=new Audio('/sounds/victory.mp3');
@@ -125,9 +125,7 @@ function rpsfrontend(humanimagechoice, botimagechoice, finalmessage) {
     document.getElementById('flex-box-rbs').appendChild(botDiv);
 }
 //Math.floor(Math.random()*3);
-//this will print many numbers between 0 and 2 not 3 close to 3 but not 3
-// Math.random give random numbers in float so if we want round of value in integer not so big we use 
-// Math.floor
+
 
 
 
